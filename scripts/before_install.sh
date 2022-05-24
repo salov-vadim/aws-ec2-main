@@ -1,6 +1,7 @@
 #!/bin/bash
 
-cd /home/ubuntu/express-app/front
+#cd /home/ubuntu/express-app/front
+cd /front
 #yarn install
 #yarn build
 #cd ..
