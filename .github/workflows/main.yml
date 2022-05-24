@@ -14,13 +14,13 @@ jobs:
       - name: Setup Node.js environment
         uses: actions/setup-node@v2.5.1
 
-
-      - name: Build
-        run: |
-          cd front
-          yarn install
-          yarn build
-          ls
+#
+#      - name: Build
+#        run: |
+#          cd front
+#          yarn install
+#          yarn build
+#          ls
 
 
   continuous-deployment:
@@ -40,6 +40,7 @@ jobs:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: ${{ secrets.AWS_REGION }}
+
       - name: Create CodeDeploy Deployment
         id: deploy
         run: |
