@@ -1,7 +1,7 @@
 #!/bin/bash
 
 
-#ls
+ls
 cd ~/express-app/front
 #yarn install
 #yarn build
