@@ -24,8 +24,8 @@ jobs:
         id: deploy
         run: |
                 aws deploy create-deployment \
-                --application-name new-express \
-                --deployment-group-name express \
+                --application-name best \
+                --deployment-group-name best \
                 --deployment-config-name CodeDeployDefault.OneAtATime \
                 --github-location repository=${{ github.repository }},commitId=${{ github.sha }}
 
