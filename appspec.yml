@@ -3,7 +3,7 @@ os: linux
 files:
   - source: ./
     destination: /home/ubuntu/express-app
-    runas: ubuntu
+
 hooks:
 #  ApplicationStop:
 #    - location: scripts/application_stop.sh
@@ -13,7 +13,7 @@ hooks:
   BeforeInstall:
     - location: /scripts/before_install.sh
       timeout: 300
-      runas: ubuntu
+      runas: root
 #
 #  ApplicationStart:
 #    - location: /home/ubuntu/express-app/scripts/application_start.sh
