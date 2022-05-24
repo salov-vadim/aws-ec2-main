@@ -3,7 +3,13 @@ os: linux
 files:
   - source: ./
     destination: /home/ubuntu/express-app
-
+  permissions:
+    - object: /home/ubuntu/express-app
+      owner: ubuntu
+      group: ubuntu
+      type:
+        - directory
+        - file
 hooks:
 #  ApplicationStop:
 #    - location: scripts/application_stop.sh
@@ -13,7 +19,7 @@ hooks:
   BeforeInstall:
     - location: /scripts/before_install.sh
       timeout: 300
-      runas: root
+      runas: ubuntu
 #
 #  ApplicationStart:
 #    - location: /home/ubuntu/express-app/scripts/application_start.sh
