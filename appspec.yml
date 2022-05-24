@@ -13,9 +13,9 @@ hooks:
     - location: /home/ubuntu/express-app/scripts/before_install.sh
       timeout: 300
       runas: ubuntu
-
-  ApplicationStart:
-    - location: /home/ubuntu/express-app/scripts/application_start.sh
-      timeout: 300
-      runas: ubuntu
+#
+#  ApplicationStart:
+#    - location: /home/ubuntu/express-app/scripts/application_start.sh
+#      timeout: 300
+#      runas: ubuntu
 
